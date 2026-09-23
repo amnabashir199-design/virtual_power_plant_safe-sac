@@ -1,0 +1,33 @@
+variants:
+  direct_sac_no_safety:
+    base_family: direct_safesac
+    physical_projection: false
+    service_coaching: false
+    terminal_recovery: true
+    residual_action_weight: 0.0
+  residual_prior_no_safety:
+    base_family: residual_sac
+    greedy_prior: true
+    residual_limit_fraction: 0.2
+    physical_projection: false
+    service_coaching: false
+    terminal_recovery: false
+    residual_action_weight: 0.0
+  residual_sac:
+    source: models/residual_sac
+    physical_projection: true
+    service_coaching: true
+    terminal_recovery: false
+    residual_action_weight: 0.0
+  proposed_no_terminal_recovery:
+    base_family: proposed_residual_safesac
+    physical_projection: true
+    service_coaching: true
+    terminal_recovery: false
+    residual_action_weight: 0.1
+  proposed_residual_safesac:
+    source: models/proposed_residual_safesac
+    physical_projection: true
+    service_coaching: true
+    terminal_recovery: true
+    residual_action_weight: 0.1

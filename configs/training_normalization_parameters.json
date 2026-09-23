@@ -1,0 +1,18 @@
+{
+  "DR_required_reduction_kW": 676.4698656123257,
+  "PUE_model": 1.41,
+  "P_IT_kW": 676.4698656123257,
+  "P_cooling_kW": 235.42516195341707,
+  "P_total_dc_kW": 676.4698656123257,
+  "Pdc_forecast_kW": 676.4698656123257,
+  "Pgrid_ref_kW": 676.4698656123257,
+  "Ppv_forecast_kW": 608.025,
+  "Ppv_kW": 610.5,
+  "ambient_temp_C": 50.0,
+  "carbon_gCO2_per_kWh_proxy": 1000.0,
+  "cooling_ratio": 0.36000000000000004,
+  "grid_import_contract_limit_kW": 676.4698656123257,
+  "price_buy_EUR_per_kWh": 0.12146,
+  "price_forecast_EUR_per_kWh": 0.12146,
+  "temperature_deviation_C": 20.0
+}

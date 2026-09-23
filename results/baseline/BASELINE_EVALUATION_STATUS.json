@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "main_baselines_evaluated": 5,
+  "scenario_baseline_trajectories_evaluated": 40,
+  "test_intervals_per_trajectory": 8832,
+  "test_days_per_trajectory": 92,
+  "scenario_count": 8,
+  "metric_reproduction_rows": 85,
+  "metric_reproduction_all_verified": true,
+  "trajectory_checks_all_passed": true,
+  "learned_models_loaded": false,
+  "training_executed": false
+}

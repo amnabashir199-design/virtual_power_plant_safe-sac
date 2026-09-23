@@ -1,0 +1,22 @@
+{
+  "controller": "proposed_no_terminal_recovery",
+  "seed": 1,
+  "training_steps": 100000,
+  "train_frequency_environment_steps": 4,
+  "gradient_steps_per_update": 1,
+  "planned_gradient_updates_after_learning_starts": 23750,
+  "selected_checkpoint_step": 80000,
+  "selection_rule": "minimum mean daily validation objective across all 92 validation days",
+  "config_path": "configs\\publication_v1\\proposed_residual_safesac.yaml",
+  "config_sha256": "78b54887ad8d237ccfae0151c20afac2fbc7067dacfb3d4e12a3b7153660fa50",
+  "config_snapshot_sha256": "59bea21d44360ba196a42a81d00a2470b2727c505ca987dc19f8a0ee1e13f30c",
+  "dataset_path": "results\\publication_v1\\dataset\\green_dc_vpp_publication_v1_2019_15min.parquet",
+  "dataset_sha256": "e8cfd0456c63797c25e9a16a43423eb783c4f7c8f6a41436748cbf9f02ddff31",
+  "model_path": "results\\publication_v1\\models\\proposed_no_terminal_recovery\\seed_1\\selected_validation_checkpoint.zip",
+  "model_sha256": "5f10f20792e639b63e5ab689021a4563671f2329350d6586fd4d135310f65f66",
+  "latest_model_path": "results\\publication_v1\\models\\proposed_no_terminal_recovery\\seed_1\\latest_model.zip",
+  "latest_model_sha256": "0ca14a63f5a64531c8c29b0de850fcde8be6c6f6578cef413a9e7ad521918cc3",
+  "observation_dimension": 28,
+  "action_dimension": 1,
+  "elapsed_seconds": 1529.1725852489471
+}

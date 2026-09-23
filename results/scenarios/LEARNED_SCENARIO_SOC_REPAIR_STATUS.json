@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "reason": "old ramp/SOC conflict crossed hard SOC_max",
+  "scenario": "low_it_load",
+  "reevaluated_trajectories": 9,
+  "models_retrained": 0,
+  "models_modified": 0,
+  "affected": [
+    {
+      "controller": "residual_sac",
+      "seed": 1
+    },
+    {
+      "controller": "residual_sac",
+      "seed": 3
+    },
+    {
+      "controller": "residual_sac",
+      "seed": 4
+    },
+    {
+      "controller": "residual_sac",
+      "seed": 5
+    },
+    {
+      "controller": "proposed_residual_safesac",
+      "seed": 1
+    },
+    {
+      "controller": "proposed_residual_safesac",
+      "seed": 2
+    },
+    {
+      "controller": "proposed_residual_safesac",
+      "seed": 3
+    },
+    {
+      "controller": "proposed_residual_safesac",
+      "seed": 4
+    },
+    {
+      "controller": "proposed_residual_safesac",
+      "seed": 5
+    }
+  ]
+}

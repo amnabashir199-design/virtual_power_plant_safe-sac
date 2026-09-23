@@ -1,0 +1,351 @@
+{
+  "high_it_definition": {
+    "code_constant": 1.25,
+    "baseline_test_mean_kW": 388.28265363627503,
+    "high_test_mean_kW": 485.3533170453438,
+    "mean_ratio": 1.25,
+    "interval_ratio_min": 1.2499999999999998,
+    "interval_ratio_max": 1.2500000000000002,
+    "verified_exact_1_25": true
+  },
+  "scenario_constants": {
+    "low_scale": 0.75,
+    "high_scale": 1.25,
+    "burst_scale": 1.45,
+    "dr_scale": 1.25,
+    "shiftable_fraction": 0.2,
+    "hot_cooling_max_increase": 0.25,
+    "definitions": {
+      "baseline_real": "Original real/hybrid 2019 profile; no IT-load modification.",
+      "low_it_load": "Synthetic sensitivity case with IT load scaled uniformly to 75% of baseline.",
+      "high_it_load": "Synthetic sensitivity case with IT load scaled uniformly to 125% of baseline.",
+      "ai_training_bursty": "Synthetic AI-training blocks on Tuesday, Thursday, and Saturday from 08:00 to 16:00 UTC.",
+      "smooth_cloud_service": "Synthetic stable cloud-service profile formed by a centered four-hour rolling mean with daily energy preservation.",
+      "workload_shiftable": "Synthetic flexible-batch case shifting 20% of daily IT energy toward lower-price, lower-carbon, non-DR intervals.",
+      "hot_day_cooling_stress": "Synthetic thermal-stress case retaining IT load while increasing cooling sensitivity in the hottest ambient-temperature decile.",
+      "dr_coincident_high_load": "Synthetic difficult case increasing IT load by 25% during DR events and within one-hour event shoulders."
+    }
+  },
+  "pooled_scenario_dr": {
+    "baseline_real": {
+      "seed_count": 5,
+      "active_intervals_per_seed": [
+        128
+      ],
+      "active_events_per_seed": [
+        16
+      ],
+      "pooled_active_interval_compliance_pct_mean_across_seeds": 99.84375,
+      "pooled_event_compliance_pct_mean_across_seeds": 98.75,
+      "pooled_violation_energy_kWh_mean_across_seeds": 0.3258578939596418,
+      "trajectory_sources": [
+        "vpp__final\\results\\publication_v1\\scenarios\\trajectories\\baseline_real_proposed_residual_safesac_seed_1.parquet",
+        "vpp__final\\results\\publication_v1\\scenarios\\trajectories\\baseline_real_proposed_residual_safesac_seed_2.parquet",
+        "vpp__final\\results\\publication_v1\\scenarios\\trajectories\\baseline_real_proposed_residual_safesac_seed_3.parquet",
+        "vpp__final\\results\\publication_v1\\scenarios\\trajectories\\baseline_real_proposed_residual_safesac_seed_4.parquet",
+        "vpp__final\\results\\publication_v1\\scenarios\\trajectories\\baseline_real_proposed_residual_safesac_seed_5.parquet"
+      ]
+    },
+    "low_it_load": {
+      "seed_count": 5,
+      "active_intervals_per_seed": [
+        128
+      ],
+      "active_events_per_seed": [
+        16
+      ],
+      "pooled_active_interval_compliance_pct_mean_across_seeds": 100.0,
+      "pooled_event_compliance_pct_mean_across_seeds": 100.0,
+      "pooled_violation_energy_kWh_mean_across_seeds": 3.126388037344441e-14,
+      "trajectory_sources": [
+        "vpp__final\\results\\publication_final\\scenario_trajectories\\learned_soc_repair\\low_it_load_proposed_residual_safesac_seed_1_final.parquet",
+        "vpp__final\\results\\publication_final\\scenario_trajectories\\learned_soc_repair\\low_it_load_proposed_residual_safesac_seed_2_final.parquet",
+        "vpp__final\\results\\publication_final\\scenario_trajectories\\learned_soc_repair\\low_it_load_proposed_residual_safesac_seed_3_final.parquet",
+        "vpp__final\\results\\publication_final\\scenario_trajectories\\learned_soc_repair\\low_it_load_proposed_residual_safesac_seed_4_final.parquet",
+        "vpp__final\\results\\publication_final\\scenario_trajectories\\learned_soc_repair\\low_it_load_proposed_residual_safesac_seed_5_final.parquet"
+      ]
+    },
+    "high_it_load": {
+      "seed_count": 5,
+      "active_intervals_per_seed": [
+        128
+      ],
+      "active_events_per_seed": [
+        16
+      ],
+      "pooled_active_interval_compliance_pct_mean_across_seeds": 31.09375,
+      "pooled_event_compliance_pct_mean_across_seeds": 3.75,
+      "pooled_violation_energy_kWh_mean_across_seeds": 9175.923114205574,
+      "trajectory_sources": [
+        "vpp__final\\results\\publication_v1\\scenarios\\trajectories\\high_it_load_proposed_residual_safesac_seed_1.parquet",
+        "vpp__final\\results\\publication_v1\\scenarios\\trajectories\\high_it_load_proposed_residual_safesac_seed_2.parquet",
+        "vpp__final\\results\\publication_v1\\scenarios\\trajectories\\high_it_load_proposed_residual_safesac_seed_3.parquet",
+        "vpp__final\\results\\publication_v1\\scenarios\\trajectories\\high_it_load_proposed_residual_safesac_seed_4.parquet",
+        "vpp__final\\results\\publication_v1\\scenarios\\trajectories\\high_it_load_proposed_residual_safesac_seed_5.parquet"
+      ]
+    },
+    "ai_training_bursty": {
+      "seed_count": 5,
+      "active_intervals_per_seed": [
+        128
+      ],
+      "active_events_per_seed": [
+        16
+      ],
+      "pooled_active_interval_compliance_pct_mean_across_seeds": 37.03125,
+      "pooled_event_compliance_pct_mean_across_seeds": 28.75,
+      "pooled_violation_energy_kWh_mean_across_seeds": 4991.657024587756,
+      "trajectory_sources": [
+        "vpp__final\\results\\publication_v1\\scenarios\\trajectories\\ai_training_bursty_proposed_residual_safesac_seed_1.parquet",
+        "vpp__final\\results\\publication_v1\\scenarios\\trajectories\\ai_training_bursty_proposed_residual_safesac_seed_2.parquet",
+        "vpp__final\\results\\publication_v1\\scenarios\\trajectories\\ai_training_bursty_proposed_residual_safesac_seed_3.parquet",
+        "vpp__final\\results\\publication_v1\\scenarios\\trajectories\\ai_training_bursty_proposed_residual_safesac_seed_4.parquet",
+        "vpp__final\\results\\publication_v1\\scenarios\\trajectories\\ai_training_bursty_proposed_residual_safesac_seed_5.parquet"
+      ]
+    },
+    "smooth_cloud_service": {
+      "seed_count": 5,
+      "active_intervals_per_seed": [
+        128
+      ],
+      "active_events_per_seed": [
+        16
+      ],
+      "pooled_active_interval_compliance_pct_mean_across_seeds": 99.84375,
+      "pooled_event_compliance_pct_mean_across_seeds": 98.75,
+      "pooled_violation_energy_kWh_mean_across_seeds": 1.4567839294066574,
+      "trajectory_sources": [
+        "vpp__final\\results\\publication_v1\\scenarios\\trajectories\\smooth_cloud_service_proposed_residual_safesac_seed_1.parquet",
+        "vpp__final\\results\\publication_v1\\scenarios\\trajectories\\smooth_cloud_service_proposed_residual_safesac_seed_2.parquet",
+        "vpp__final\\results\\publication_v1\\scenarios\\trajectories\\smooth_cloud_service_proposed_residual_safesac_seed_3.parquet",
+        "vpp__final\\results\\publication_v1\\scenarios\\trajectories\\smooth_cloud_service_proposed_residual_safesac_seed_4.parquet",
+        "vpp__final\\results\\publication_v1\\scenarios\\trajectories\\smooth_cloud_service_proposed_residual_safesac_seed_5.parquet"
+      ]
+    },
+    "workload_shiftable": {
+      "seed_count": 5,
+      "active_intervals_per_seed": [
+        128
+      ],
+      "active_events_per_seed": [
+        16
+      ],
+      "pooled_active_interval_compliance_pct_mean_across_seeds": 100.0,
+      "pooled_event_compliance_pct_mean_across_seeds": 100.0,
+      "pooled_violation_energy_kWh_mean_across_seeds": 1.5347723092418165e-13,
+      "trajectory_sources": [
+        "vpp__final\\results\\publication_v1\\scenarios\\trajectories\\workload_shiftable_proposed_residual_safesac_seed_1.parquet",
+        "vpp__final\\results\\publication_v1\\scenarios\\trajectories\\workload_shiftable_proposed_residual_safesac_seed_2.parquet",
+        "vpp__final\\results\\publication_v1\\scenarios\\trajectories\\workload_shiftable_proposed_residual_safesac_seed_3.parquet",
+        "vpp__final\\results\\publication_v1\\scenarios\\trajectories\\workload_shiftable_proposed_residual_safesac_seed_4.parquet",
+        "vpp__final\\results\\publication_v1\\scenarios\\trajectories\\workload_shiftable_proposed_residual_safesac_seed_5.parquet"
+      ]
+    },
+    "hot_day_cooling_stress": {
+      "seed_count": 5,
+      "active_intervals_per_seed": [
+        128
+      ],
+      "active_events_per_seed": [
+        16
+      ],
+      "pooled_active_interval_compliance_pct_mean_across_seeds": 99.84375,
+      "pooled_event_compliance_pct_mean_across_seeds": 98.75,
+      "pooled_violation_energy_kWh_mean_across_seeds": 0.533687942151056,
+      "trajectory_sources": [
+        "vpp__final\\results\\publication_v1\\scenarios\\trajectories\\hot_day_cooling_stress_proposed_residual_safesac_seed_1.parquet",
+        "vpp__final\\results\\publication_v1\\scenarios\\trajectories\\hot_day_cooling_stress_proposed_residual_safesac_seed_2.parquet",
+        "vpp__final\\results\\publication_v1\\scenarios\\trajectories\\hot_day_cooling_stress_proposed_residual_safesac_seed_3.parquet",
+        "vpp__final\\results\\publication_v1\\scenarios\\trajectories\\hot_day_cooling_stress_proposed_residual_safesac_seed_4.parquet",
+        "vpp__final\\results\\publication_v1\\scenarios\\trajectories\\hot_day_cooling_stress_proposed_residual_safesac_seed_5.parquet"
+      ]
+    },
+    "dr_coincident_high_load": {
+      "seed_count": 5,
+      "active_intervals_per_seed": [
+        128
+      ],
+      "active_events_per_seed": [
+        16
+      ],
+      "pooled_active_interval_compliance_pct_mean_across_seeds": 96.40625,
+      "pooled_event_compliance_pct_mean_across_seeds": 82.5,
+      "pooled_violation_energy_kWh_mean_across_seeds": 344.23406589436763,
+      "trajectory_sources": [
+        "vpp__final\\results\\publication_v1\\scenarios\\trajectories\\dr_coincident_high_load_proposed_residual_safesac_seed_1.parquet",
+        "vpp__final\\results\\publication_v1\\scenarios\\trajectories\\dr_coincident_high_load_proposed_residual_safesac_seed_2.parquet",
+        "vpp__final\\results\\publication_v1\\scenarios\\trajectories\\dr_coincident_high_load_proposed_residual_safesac_seed_3.parquet",
+        "vpp__final\\results\\publication_v1\\scenarios\\trajectories\\dr_coincident_high_load_proposed_residual_safesac_seed_4.parquet",
+        "vpp__final\\results\\publication_v1\\scenarios\\trajectories\\dr_coincident_high_load_proposed_residual_safesac_seed_5.parquet"
+      ]
+    }
+  },
+  "controller_stack": {
+    "direct_safesac": {
+      "mode": "direct_sac",
+      "greedy_prior_enabled": false,
+      "residual_action_weight": 0.0,
+      "terminal_recovery_enabled": true,
+      "physical_projection_enabled": true,
+      "service_coaching_configured": true
+    },
+    "residual_sac": {
+      "mode": "residual_sac",
+      "greedy_prior_enabled": true,
+      "residual_action_weight": 0.0,
+      "terminal_recovery_enabled": false,
+      "physical_projection_enabled": true,
+      "service_coaching_configured": true
+    },
+    "proposed_residual_safesac": {
+      "mode": "residual_sac",
+      "greedy_prior_enabled": true,
+      "residual_action_weight": 0.1,
+      "terminal_recovery_enabled": true,
+      "physical_projection_enabled": true,
+      "service_coaching_configured": true
+    }
+  },
+  "network_dimensions": {
+    "direct_safesac": {
+      "observation_dimension": 24,
+      "action_dimension": 1,
+      "actor_dimensions": [
+        24,
+        256,
+        256,
+        1
+      ],
+      "critic_dimensions": [
+        25,
+        256,
+        256,
+        1
+      ],
+      "twin_critics": true
+    },
+    "residual_sac": {
+      "observation_dimension": 28,
+      "action_dimension": 1,
+      "actor_dimensions": [
+        28,
+        256,
+        256,
+        1
+      ],
+      "critic_dimensions": [
+        29,
+        256,
+        256,
+        1
+      ],
+      "twin_critics": true
+    },
+    "proposed_residual_safesac": {
+      "observation_dimension": 28,
+      "action_dimension": 1,
+      "actor_dimensions": [
+        28,
+        256,
+        256,
+        1
+      ],
+      "critic_dimensions": [
+        29,
+        256,
+        256,
+        1
+      ],
+      "twin_critics": true
+    }
+  },
+  "bess_parameters": {
+    "E_batt_kWh": 4000.0,
+    "P_batt_max_kW": 750.0,
+    "SOC_min": 0.2,
+    "SOC_max": 0.9,
+    "SOC_reserve": 0.3,
+    "SOC_initial": 0.55,
+    "eta_ch": 0.95,
+    "eta_dis": 0.95,
+    "ramp_limit_kW_per_15min": 300.0,
+    "degradation_cost_EUR_per_kWh_throughput": 0.02
+  },
+  "system_parameters": {
+    "pv_capacity_kWp": 1000.0,
+    "other_auxiliary_load_fraction_of_IT": 0.05,
+    "grid_import_contract_limit_kW": null,
+    "dispatch_resolution_minutes": 15,
+    "effective_grid_import_contract_limit_kW": 676.4698656123257,
+    "config_snapshot_grid_limit_kW": 703.2846253126164,
+    "grid_limit_resolution": "The environment reads the row-level dataset limit first; therefore 676.4698656123257 kW is the effective limit in training/evaluation despite the older assumptions value retained in the model snapshot."
+  },
+  "reward_weights": {
+    "direct_safesac": {
+      "reward_scale": 1.0,
+      "tracking_weight": 15.0,
+      "cost_weight": 0.1,
+      "carbon_weight": 0.02,
+      "degradation_weight": 0.08,
+      "residual_action_weight": 0.0,
+      "dr_violation_weight": 40.0,
+      "peak_violation_weight": 20.0,
+      "soc_violation_weight": 60.0,
+      "reserve_soc_weight": 2.0,
+      "terminal_soc_weight": 20.0,
+      "soc_target_weight": 1.0,
+      "ramp_weight": 0.05,
+      "soc_low_soft_limit": 0.28,
+      "soc_high_soft_limit": 0.88,
+      "soc_low_soft_weight": 1.5,
+      "tracking_loss": "huber",
+      "tracking_huber_delta_kW": 75.0
+    },
+    "residual_sac": {
+      "reward_scale": 1.0,
+      "tracking_weight": 15.0,
+      "cost_weight": 0.1,
+      "carbon_weight": 0.02,
+      "degradation_weight": 0.08,
+      "residual_action_weight": 0.0,
+      "dr_violation_weight": 40.0,
+      "peak_violation_weight": 20.0,
+      "soc_violation_weight": 60.0,
+      "reserve_soc_weight": 2.0,
+      "terminal_soc_weight": 20.0,
+      "soc_target_weight": 1.0,
+      "ramp_weight": 0.05,
+      "soc_low_soft_limit": 0.28,
+      "soc_high_soft_limit": 0.88,
+      "soc_low_soft_weight": 1.5,
+      "tracking_loss": "huber",
+      "tracking_huber_delta_kW": 75.0
+    },
+    "proposed_residual_safesac": {
+      "reward_scale": 1.0,
+      "tracking_weight": 15.0,
+      "cost_weight": 0.1,
+      "carbon_weight": 0.02,
+      "degradation_weight": 0.08,
+      "residual_action_weight": 0.1,
+      "dr_violation_weight": 40.0,
+      "peak_violation_weight": 20.0,
+      "soc_violation_weight": 60.0,
+      "reserve_soc_weight": 2.0,
+      "terminal_soc_weight": 20.0,
+      "soc_target_weight": 1.0,
+      "ramp_weight": 0.05,
+      "soc_low_soft_limit": 0.28,
+      "soc_high_soft_limit": 0.88,
+      "soc_low_soft_weight": 1.5,
+      "tracking_loss": "huber",
+      "tracking_huber_delta_kW": 75.0
+    }
+  },
+  "checks": {
+    "all_pooled_scenario_dr_values_match_expected": true,
+    "direct_dimensions_verified": true,
+    "residual_dimensions_verified": true,
+    "high_it_verified": true
+  }
+}

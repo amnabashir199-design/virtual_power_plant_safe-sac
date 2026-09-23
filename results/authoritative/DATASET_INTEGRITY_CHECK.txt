@@ -1,0 +1,5 @@
+Frozen publication dataset
+Path: results/publication_v1/dataset/green_dc_vpp_publication_v1_2019_15min.parquet
+Original SHA256: e8cfd0456c63797c25e9a16a43423eb783c4f7c8f6a41436748cbf9f02ddff31
+Final SHA256:    e8cfd0456c63797c25e9a16a43423eb783c4f7c8f6a41436748cbf9f02ddff31
+Identical: YES

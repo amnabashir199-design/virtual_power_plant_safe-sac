@@ -1,0 +1,16 @@
+﻿project: {name: publication_v1_residual_sac}
+paths:
+  processed_parquet: data/processed/green_dc_vpp_publication_v1_2019_15min.parquet
+  assumptions_json: data/metadata/battery_and_system_assumptions.json
+environment: {episode_length: 96, timestep_hours: 0.25, allow_grid_export: true, grid_import_only: false}
+control: {mode: residual_sac, residual_power_limit_fraction: 0.20, greedy_prior_enabled: true, greedy_blend_alpha: 1.0}
+battery: {E_batt_kWh: 4000.0, P_batt_max_kW: 750.0, SOC_min: 0.2, SOC_max: 0.9, SOC_reserve: 0.3, SOC_initial: 0.55, eta_ch: 0.95, eta_dis: 0.95, ramp_limit_kW_per_15min: 300.0, degradation_cost_EUR_per_kWh_throughput: 0.02}
+system: {pv_capacity_kWp: 1000.0, other_auxiliary_load_fraction_of_IT: 0.05, grid_import_contract_limit_kW: null, dispatch_resolution_minutes: 15}
+reward: {reward_scale: 1.0, tracking_weight: 15.0, cost_weight: 0.10, carbon_weight: 0.02, degradation_weight: 0.08, residual_action_weight: 0.0, dr_violation_weight: 40.0, peak_violation_weight: 20.0, soc_violation_weight: 60.0, reserve_soc_weight: 2.0, terminal_soc_weight: 20.0, soc_target_weight: 1.0, ramp_weight: 0.05, soc_low_soft_limit: 0.28, soc_high_soft_limit: 0.88, soc_low_soft_weight: 1.5, tracking_loss: huber, tracking_huber_delta_kW: 75.0}
+terminal_recovery: {enabled: false, window_steps: 24, max_weight_multiplier: 5.0}
+safety_layer: {enabled: true, enforce_power_limit: true, enforce_soc_bounds: true, enforce_soc_reserve: false, enforce_ramp_limit: true, enforce_dr_limit: true, enforce_grid_limit: true, log_action_projection: true}
+normalization: {parameters_path: configs/training_normalization_parameters.json}
+metrics: {constraint_tolerance_kW: 1.0e-6}
+training: {algorithm: SAC, total_timesteps: 100000, learning_rate: 0.0003, buffer_size: 300000, batch_size: 256, gamma: 0.99, tau: 0.005, train_freq: 4, gradient_steps: 1, learning_starts: 5000, ent_coef: auto, device: auto, checkpoint_interval: 20000}
+evaluation: {deterministic: true, validation_days: 92, test_days: 92, initial_soc: 0.55}
+

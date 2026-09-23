@@ -1,0 +1,20 @@
+{
+  "path": "data/processed/green_dc_vpp_publication_v1_2019_15min.parquet",
+  "sha256": "e8cfd0456c63797c25e9a16a43423eb783c4f7c8f6a41436748cbf9f02ddff31",
+  "rows": 35040,
+  "columns": 56,
+  "start_utc": "2019-01-01T00:00:00+00:00",
+  "end_utc": "2019-12-31T23:45:00+00:00",
+  "duplicate_timestamps": 0,
+  "missing_timestamps": 0,
+  "split_rows": {
+    "train": 17376,
+    "validation": 8832,
+    "test": 8832
+  },
+  "scenario_dataset_count": 8,
+  "high_to_baseline_mean_ratio": 1.2500000000000002,
+  "high_to_baseline_interval_ratio_min": 1.2499999999999998,
+  "high_to_baseline_interval_ratio_max": 1.2500000000000002,
+  "passed": true
+}

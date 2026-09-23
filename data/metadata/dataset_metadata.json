@@ -1,0 +1,25 @@
+{
+  "source": "data\\green_dc_vpp_2019_15min.csv",
+  "source_sha256": "675f5a64dfe63b540c7bd7904152fb42e94dea18c4a52d8076e959c390c81e7b",
+  "dataset_parquet": "results\\publication_v1\\dataset\\green_dc_vpp_publication_v1_2019_15min.parquet",
+  "dataset_parquet_sha256": "e8cfd0456c63797c25e9a16a43423eb783c4f7c8f6a41436748cbf9f02ddff31",
+  "dataset_csv_gz_sha256": "756a4b8c213a9baa5fd261bd79064754bbe4b889f82dc649929c71871cb927b4",
+  "validation": {
+    "rows": 35040,
+    "start": "2019-01-01 00:00:00",
+    "end": "2019-12-31 23:45:00",
+    "duplicate_timestamps": 0,
+    "missing_timestamps": 0,
+    "maximum_facility_balance_error_kW": 2.4158453015843406e-13,
+    "train_rows": 17376,
+    "validation_rows": 8832,
+    "test_rows": 8832
+  },
+  "split_definitions": {
+    "train": "2019-01-01 through 2019-06-30",
+    "validation": "2019-07-01 through 2019-09-30",
+    "test": "2019-10-01 through 2019-12-31"
+  },
+  "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26100-SP0"
+}

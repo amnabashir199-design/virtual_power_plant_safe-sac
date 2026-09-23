@@ -1,0 +1,31 @@
+{
+  "baseline_real": {"it_scale": 1.0},
+  "low_it_load": {"it_scale": 0.75},
+  "high_it_load": {"it_scale": 1.25},
+  "ai_training_bursty": {
+    "it_scale_during_blocks": 1.45,
+    "weekdays_utc": ["Tuesday", "Thursday", "Saturday"],
+    "start_hour_utc": 8,
+    "end_hour_utc": 16
+  },
+  "smooth_cloud_service": {
+    "centered_window_intervals": 16,
+    "window_hours": 4,
+    "restore_daily_energy": true
+  },
+  "workload_shiftable": {
+    "fixed_fraction": 0.8,
+    "flexible_fraction": 0.2,
+    "preference": "exp(-2*(0.5*price_score + 0.5*carbon_score + 2*DR_active))",
+    "preserve_daily_energy": true
+  },
+  "hot_day_cooling_stress": {
+    "it_load_unchanged": true,
+    "ambient_percentile_threshold": 0.9,
+    "maximum_cooling_ratio_increase": 0.25
+  },
+  "dr_coincident_high_load": {
+    "it_scale_during_event_and_shoulders": 1.25,
+    "shoulder_hours_each_side": 1
+  }
+}

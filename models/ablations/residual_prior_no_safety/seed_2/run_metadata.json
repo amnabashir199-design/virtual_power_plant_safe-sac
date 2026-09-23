@@ -1,0 +1,22 @@
+{
+  "controller": "residual_prior_no_safety",
+  "seed": 2,
+  "training_steps": 100000,
+  "train_frequency_environment_steps": 4,
+  "gradient_steps_per_update": 1,
+  "planned_gradient_updates_after_learning_starts": 23750,
+  "selected_checkpoint_step": 100000,
+  "selection_rule": "minimum mean daily validation objective across all 92 validation days",
+  "config_path": "configs\\publication_v1\\residual_sac.yaml",
+  "config_sha256": "22764a1ea3fdaccf7a87c754634e19ec72129836a080856994819ffc838f74dd",
+  "config_snapshot_sha256": "f3144f7fc98a65aa4c93aa5a390fb598adb646e20dcc57d0c30e13606e4f574f",
+  "dataset_path": "results\\publication_v1\\dataset\\green_dc_vpp_publication_v1_2019_15min.parquet",
+  "dataset_sha256": "e8cfd0456c63797c25e9a16a43423eb783c4f7c8f6a41436748cbf9f02ddff31",
+  "model_path": "results\\publication_v1\\models\\residual_prior_no_safety\\seed_2\\selected_validation_checkpoint.zip",
+  "model_sha256": "3088657ba73944eb283ced08cc6b890315e088694ef0d857843267ebae834f35",
+  "latest_model_path": "results\\publication_v1\\models\\residual_prior_no_safety\\seed_2\\latest_model.zip",
+  "latest_model_sha256": "ed6b5b3dcf778ef3923096b9fa4cf56f729fa40ed545089f317771160a456423",
+  "observation_dimension": 28,
+  "action_dimension": 1,
+  "elapsed_seconds": 1396.4343376159668
+}

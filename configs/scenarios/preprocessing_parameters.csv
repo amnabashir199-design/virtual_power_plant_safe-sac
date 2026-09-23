@@ -1,0 +1,29 @@
+parameter,source,training_period,value,test_data_used,code_location,classification
+Pdc_forecast_kW_initial_fallback,training median of P_total_dc_kW; subsequent values use causal t-1 rolling mean,2019-01-01/2019-06-30,456.8356759744371,False,scripts/32_build_publication_dataset.py:build_publication_dataset,B_empirically_estimated
+Ppv_forecast_kW_initial_fallback,training median of Ppv_kW; subsequent values use causal t-1 rolling mean,2019-01-01/2019-06-30,8.487499999999999,False,scripts/32_build_publication_dataset.py:build_publication_dataset,B_empirically_estimated
+price_forecast_EUR_per_kWh_initial_fallback,training median of price_buy_EUR_per_kWh; subsequent values use causal t-1 rolling mean,2019-01-01/2019-06-30,0.03936,False,scripts/32_build_publication_dataset.py:build_publication_dataset,B_empirically_estimated
+grid_import_contract_limit_kW,90th percentile of training P_import_without_battery_kW,2019-01-01/2019-06-30,676.4698656123257,False,scripts/32_build_publication_dataset.py:build_publication_dataset,B_empirically_estimated
+DR_price_day_threshold,85th percentile of training daily day-ahead price maximum,2019-01-01/2019-06-30,63.67,False,scripts/32_build_publication_dataset.py:build_publication_dataset,B_empirically_estimated
+DR_grid_forecast_day_threshold,85th percentile of training daily grid-load forecast maximum,2019-01-01/2019-06-30,70536.0,False,scripts/32_build_publication_dataset.py:build_publication_dataset,B_empirically_estimated
+Pgrid_ref_initial_fallback,training median of no-battery grid import,2019-01-01/2019-06-30,406.33717716136385,False,scripts/32_build_publication_dataset.py:build_publication_dataset,B_empirically_estimated
+forecast_rolling_window_intervals,fixed benchmark design assumption,not fitted,4.0,False,scripts/32_build_publication_dataset.py:build_publication_dataset,A_physical_or_fixed_design
+reference_rolling_window_intervals,fixed benchmark design assumption,not fitted,96.0,False,scripts/32_build_publication_dataset.py:build_publication_dataset,A_physical_or_fixed_design
+DR_start_hour_UTC,fixed benchmark design assumption,not fitted,16.0,False,scripts/32_build_publication_dataset.py:build_publication_dataset,A_physical_or_fixed_design
+DR_duration_hours,fixed benchmark design assumption,not fitted,2.0,False,scripts/32_build_publication_dataset.py:build_publication_dataset,A_physical_or_fixed_design
+DR_battery_power_assumption_kW,fixed benchmark design assumption,not fitted,750.0,False,scripts/32_build_publication_dataset.py:build_publication_dataset,A_physical_or_fixed_design
+observation_normalizer.P_total_dc_kW,training rows only,2019-01-01/2019-06-30,676.4698656123257,False,src/green_dc_vpp/normalization.py:fit_training_normalizers,B_empirically_estimated
+observation_normalizer.P_IT_kW,training rows only,2019-01-01/2019-06-30,676.4698656123257,False,src/green_dc_vpp/normalization.py:fit_training_normalizers,B_empirically_estimated
+observation_normalizer.P_cooling_kW,training rows only,2019-01-01/2019-06-30,235.42516195341707,False,src/green_dc_vpp/normalization.py:fit_training_normalizers,B_empirically_estimated
+observation_normalizer.PUE_model,training rows only,2019-01-01/2019-06-30,1.41,False,src/green_dc_vpp/normalization.py:fit_training_normalizers,B_empirically_estimated
+observation_normalizer.cooling_ratio,training rows only,2019-01-01/2019-06-30,0.36000000000000004,False,src/green_dc_vpp/normalization.py:fit_training_normalizers,B_empirically_estimated
+observation_normalizer.Pdc_forecast_kW,training rows only,2019-01-01/2019-06-30,676.4698656123257,False,src/green_dc_vpp/normalization.py:fit_training_normalizers,B_empirically_estimated
+observation_normalizer.Ppv_kW,training rows only,2019-01-01/2019-06-30,610.5,False,src/green_dc_vpp/normalization.py:fit_training_normalizers,B_empirically_estimated
+observation_normalizer.Ppv_forecast_kW,training rows only,2019-01-01/2019-06-30,608.025,False,src/green_dc_vpp/normalization.py:fit_training_normalizers,B_empirically_estimated
+observation_normalizer.price_buy_EUR_per_kWh,training rows only,2019-01-01/2019-06-30,0.12146,False,src/green_dc_vpp/normalization.py:fit_training_normalizers,B_empirically_estimated
+observation_normalizer.price_forecast_EUR_per_kWh,training rows only,2019-01-01/2019-06-30,0.12146,False,src/green_dc_vpp/normalization.py:fit_training_normalizers,B_empirically_estimated
+observation_normalizer.carbon_gCO2_per_kWh_proxy,training rows only,2019-01-01/2019-06-30,1000.0,False,src/green_dc_vpp/normalization.py:fit_training_normalizers,B_empirically_estimated
+observation_normalizer.Pgrid_ref_kW,training rows only,2019-01-01/2019-06-30,676.4698656123257,False,src/green_dc_vpp/normalization.py:fit_training_normalizers,B_empirically_estimated
+observation_normalizer.DR_required_reduction_kW,training rows only,2019-01-01/2019-06-30,676.4698656123257,False,src/green_dc_vpp/normalization.py:fit_training_normalizers,B_empirically_estimated
+observation_normalizer.grid_import_contract_limit_kW,training rows only,2019-01-01/2019-06-30,676.4698656123257,False,src/green_dc_vpp/normalization.py:fit_training_normalizers,B_empirically_estimated
+observation_normalizer.ambient_temp_C,training rows only,2019-01-01/2019-06-30,50.0,False,src/green_dc_vpp/normalization.py:fit_training_normalizers,B_empirically_estimated
+observation_normalizer.temperature_deviation_C,training rows only,2019-01-01/2019-06-30,20.0,False,src/green_dc_vpp/normalization.py:fit_training_normalizers,B_empirically_estimated

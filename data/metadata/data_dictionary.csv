@@ -1,0 +1,53 @@
+column,description,unit,source_or_generation,recommended_use
+timestamp_utc,Benchmark timestamp after synchronization to 15-minute resolution,UTC datetime,Constructed 2019 timeline,index/time feature
+P_IT_kW,AI/data-center IT or facility workload power from NLR inference profile,kW,NLR whole-facility inference profile resampled from 1-min to 15-min,load component
+P_cooling_kW,Modeled cooling power scaled from the cold-source cooling dataset pattern,kW,"Generated from archive.zip cold-source cooling power, ambient temperature, and P_IT_kW",cooling load
+P_other_kW,Modeled non-IT auxiliary facility power,kW,Generated as 5% of P_IT_kW,auxiliary load
+P_total_dc_kW,Total data-center electrical demand before PV/battery,kW,P_IT_kW + P_cooling_kW + P_other_kW,main data-center load
+PUE_model,Modeled power usage effectiveness,-,P_total_dc_kW / P_IT_kW,green data-center metric
+Ppv_kW,Local PV generation proxy,kW,OPSD DE_solar_profile scaled to 1000 kWp,renewable generation
+price_buy_EUR_per_kWh,Grid import price used by controller,EUR/kWh,OPSD DE-LU day-ahead price converted from EUR/MWh and clipped at zero,economic reward
+carbon_gCO2_per_kWh_proxy,Carbon intensity proxy,gCO2/kWh,Generated from German wind+solar share in OPSD; not measured carbon,carbon-aware reward
+Pgrid_ref_kW,VPP/grid reference import target,kW,"Generated from trailing smoothed net import, contract cap, and DR cap",VPP tracking
+DR_active,Demand-response event flag,0/1,"Generated on high-price/high-grid-load days, 16:00-18:00 UTC",VPP service
+DR_import_limit_kW,DR grid import limit during active DR intervals,kW,Generated feasible reduction limit from baseline import and battery power,VPP service constraint
+DR_import_limit_for_model_kW,DR limit with large default when inactive,kW,Generated from DR_import_limit_kW; inactive set to 1e9,model convenience
+grid_import_contract_limit_kW,Static grid import contract cap,kW,90th percentile of no-battery baseline import,peak shaving
+split,Chronological ML/RL split,category,"Generated: Jan-Jun train, Jul-Sep validation, Oct-Dec test",training protocol
+ambient_temp_C,Cooling/thermal feature from cold-source control dataset pattern,various,archive.zip::cold_source_control_dataset.csv tiled to 2019 timeline,thermal/cooling state
+inlet_temp_C,Cooling/thermal feature from cold-source control dataset pattern,various,archive.zip::cold_source_control_dataset.csv tiled to 2019 timeline,thermal/cooling state
+outlet_temp_C,Cooling/thermal feature from cold-source control dataset pattern,various,archive.zip::cold_source_control_dataset.csv tiled to 2019 timeline,thermal/cooling state
+temperature_deviation_C,Cooling/thermal feature from cold-source control dataset pattern,various,archive.zip::cold_source_control_dataset.csv tiled to 2019 timeline,thermal/cooling state
+chiller_usage_pct,Cooling/thermal feature from cold-source control dataset pattern,various,archive.zip::cold_source_control_dataset.csv tiled to 2019 timeline,thermal/cooling state
+ahu_usage_pct,Cooling/thermal feature from cold-source control dataset pattern,various,archive.zip::cold_source_control_dataset.csv tiled to 2019 timeline,thermal/cooling state
+cooling_action_label,Cooling/thermal feature from cold-source control dataset pattern,various,archive.zip::cold_source_control_dataset.csv tiled to 2019 timeline,thermal/cooling state
+cooling_action_id,Cooling/thermal feature from cold-source control dataset pattern,various,archive.zip::cold_source_control_dataset.csv tiled to 2019 timeline,thermal/cooling state
+grid_load_MW,German grid/market/renewable time series,various,time_series_60min_singleindex.csv / OPSD Germany 2019,grid context
+grid_load_forecast_MW,German grid/market/renewable time series,various,time_series_60min_singleindex.csv / OPSD Germany 2019,grid context
+grid_solar_generation_MW,German grid/market/renewable time series,various,time_series_60min_singleindex.csv / OPSD Germany 2019,grid context
+grid_wind_generation_MW,German grid/market/renewable time series,various,time_series_60min_singleindex.csv / OPSD Germany 2019,grid context
+solar_profile_DE,German grid/market/renewable time series,various,time_series_60min_singleindex.csv / OPSD Germany 2019,grid context
+price_market_EUR_per_MWh,German grid/market/renewable time series,various,time_series_60min_singleindex.csv / OPSD Germany 2019,grid context
+price_market_EUR_per_kWh,German grid/market/renewable time series,various,time_series_60min_singleindex.csv / OPSD Germany 2019,grid context
+source_load_file,Provenance or scenario descriptor,text,Generated metadata,reproducibility
+source_grid_file,Provenance or scenario descriptor,text,Generated metadata,reproducibility
+source_cooling_file,Provenance or scenario descriptor,text,Generated metadata,reproducibility
+source_pv_method,Provenance or scenario descriptor,text,Generated metadata,reproducibility
+source_carbon_method,Provenance or scenario descriptor,text,Generated metadata,reproducibility
+source_dr_method,Provenance or scenario descriptor,text,Generated metadata,reproducibility
+scenario_id,Provenance or scenario descriptor,text,Generated metadata,reproducibility
+ai_utilization,Derived or auxiliary benchmark variable,various,Generated during dataset construction,model feature or diagnostic
+Pdc_forecast_kW,Derived or auxiliary benchmark variable,various,Generated during dataset construction,model feature or diagnostic
+Ppv_forecast_kW,Derived or auxiliary benchmark variable,various,Generated during dataset construction,model feature or diagnostic
+price_sell_EUR_per_kWh,Derived or auxiliary benchmark variable,various,Generated during dataset construction,model feature or diagnostic
+price_forecast_EUR_per_kWh,Derived or auxiliary benchmark variable,various,Generated during dataset construction,model feature or diagnostic
+renewable_share_proxy,Derived or auxiliary benchmark variable,various,Generated during dataset construction,model feature or diagnostic
+cooling_dataset_server_workload_pct,Derived or auxiliary benchmark variable,various,Generated during dataset construction,model feature or diagnostic
+cooling_ratio_model,Derived or auxiliary benchmark variable,various,Generated during dataset construction,model feature or diagnostic
+P_net_without_battery_kW,Derived or auxiliary benchmark variable,various,Generated during dataset construction,model feature or diagnostic
+P_import_without_battery_kW,Derived or auxiliary benchmark variable,various,Generated during dataset construction,model feature or diagnostic
+P_export_without_battery_kW,Derived or auxiliary benchmark variable,various,Generated during dataset construction,model feature or diagnostic
+DR_required_reduction_kW,Derived or auxiliary benchmark variable,various,Generated during dataset construction,model feature or diagnostic
+hour_of_day,Derived or auxiliary benchmark variable,various,Generated during dataset construction,model feature or diagnostic
+day_of_week,Derived or auxiliary benchmark variable,various,Generated during dataset construction,model feature or diagnostic
+month,Derived or auxiliary benchmark variable,various,Generated during dataset construction,model feature or diagnostic

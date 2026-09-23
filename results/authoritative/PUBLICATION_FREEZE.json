@@ -1,0 +1,245 @@
+{
+  "status": "FROZEN_FOR_MANUSCRIPT_WRITING",
+  "created_utc": "2026-08-25T02:56:01.549270+00:00",
+  "git_commit": "649f44fd80d82271d70e49699cc61e1f4d597bf9",
+  "dataset": {
+    "path": "results/publication_v1/dataset/green_dc_vpp_publication_v1_2019_15min.parquet",
+    "sha256": "e8cfd0456c63797c25e9a16a43423eb783c4f7c8f6a41436748cbf9f02ddff31",
+    "unchanged": true
+  },
+  "configuration_hashes": {
+    "configs/publication_v1/direct_safesac.yaml": "40a3907b55ba9c464e1bffe1c2a489b925a45d6845109494107bdafd87798146",
+    "configs/publication_v1/proposed_residual_safesac.yaml": "78b54887ad8d237ccfae0151c20afac2fbc7067dacfb3d4e12a3b7153660fa50",
+    "configs/publication_v1/residual_sac.yaml": "22764a1ea3fdaccf7a87c754634e19ec72129836a080856994819ffc838f74dd"
+  },
+  "learned_model_hashes": [
+    {
+      "controller": "direct_safesac",
+      "seed": 1,
+      "path": "results/publication_v1/models/direct_safesac/seed_1/selected_validation_checkpoint.zip",
+      "sha256": "f584738dd4bbdbaf45dc691205cf69dc10c0b2ef45079e2ebdff2d6a468de70d"
+    },
+    {
+      "controller": "direct_safesac",
+      "seed": 2,
+      "path": "results/publication_v1/models/direct_safesac/seed_2/selected_validation_checkpoint.zip",
+      "sha256": "620494ac856e4b6c52a26c490ee2a1ca90d98d7436d1b485ddf75fe0c748847d"
+    },
+    {
+      "controller": "direct_safesac",
+      "seed": 3,
+      "path": "results/publication_v1/models/direct_safesac/seed_3/selected_validation_checkpoint.zip",
+      "sha256": "9728270bec1acc15c004491af48ff7fd0cb58bc617e06fb3b49551bee0407cd6"
+    },
+    {
+      "controller": "direct_safesac",
+      "seed": 4,
+      "path": "results/publication_v1/models/direct_safesac/seed_4/selected_validation_checkpoint.zip",
+      "sha256": "3e6aa475bf08ac3376827f2c890044388e73d088c09c84a3c74bc7701c65d81a"
+    },
+    {
+      "controller": "direct_safesac",
+      "seed": 5,
+      "path": "results/publication_v1/models/direct_safesac/seed_5/selected_validation_checkpoint.zip",
+      "sha256": "c326d6924bb433e1f6a44e6ab40c7f72c3f084ff2ab6dc0071b6a315c7cef5fe"
+    },
+    {
+      "controller": "residual_sac",
+      "seed": 1,
+      "path": "results/publication_v1/models/residual_sac/seed_1/selected_validation_checkpoint.zip",
+      "sha256": "9f53996e6c845a2bf62926a4a4e4ed2b1c683404e97943945bf2ef16c8dcde45"
+    },
+    {
+      "controller": "residual_sac",
+      "seed": 2,
+      "path": "results/publication_v1/models/residual_sac/seed_2/selected_validation_checkpoint.zip",
+      "sha256": "70c8d0a45982e27b90470d1e412adb07b7c716eadd775dfd1f956bba772df6aa"
+    },
+    {
+      "controller": "residual_sac",
+      "seed": 3,
+      "path": "results/publication_v1/models/residual_sac/seed_3/selected_validation_checkpoint.zip",
+      "sha256": "566d2bb70a6a142f7e6a6b589f58dceb6263880968bed8b2c75855aaad47ad04"
+    },
+    {
+      "controller": "residual_sac",
+      "seed": 4,
+      "path": "results/publication_v1/models/residual_sac/seed_4/selected_validation_checkpoint.zip",
+      "sha256": "6fb2d1177d8a5efc4e391f96a2fe67abd58fffa15006c9ea4592eee392256240"
+    },
+    {
+      "controller": "residual_sac",
+      "seed": 5,
+      "path": "results/publication_v1/models/residual_sac/seed_5/selected_validation_checkpoint.zip",
+      "sha256": "0639459e341fd3f323f309dd2ae8f3c78df492aaa96adc4067f9a2560250f54c"
+    },
+    {
+      "controller": "proposed_residual_safesac",
+      "seed": 1,
+      "path": "results/publication_v1/models/proposed_residual_safesac/seed_1/selected_validation_checkpoint.zip",
+      "sha256": "7f6f667700e01f73b39958db8045576990207ef8ed519627633db8c6016b956b"
+    },
+    {
+      "controller": "proposed_residual_safesac",
+      "seed": 2,
+      "path": "results/publication_v1/models/proposed_residual_safesac/seed_2/selected_validation_checkpoint.zip",
+      "sha256": "c81141f5a2eba3f3a8818c6bec9717cf57966e85d51f76590c26128a2a374695"
+    },
+    {
+      "controller": "proposed_residual_safesac",
+      "seed": 3,
+      "path": "results/publication_v1/models/proposed_residual_safesac/seed_3/selected_validation_checkpoint.zip",
+      "sha256": "1cda6c72a4f12c5f722aca9441195016abf0c22f144ae48692d331d131de2590"
+    },
+    {
+      "controller": "proposed_residual_safesac",
+      "seed": 4,
+      "path": "results/publication_v1/models/proposed_residual_safesac/seed_4/selected_validation_checkpoint.zip",
+      "sha256": "88d1a8d013c251218ac12353d4a3c8742d1d9b5512a544e2d6f6c1d61e53a5c7"
+    },
+    {
+      "controller": "proposed_residual_safesac",
+      "seed": 5,
+      "path": "results/publication_v1/models/proposed_residual_safesac/seed_5/selected_validation_checkpoint.zip",
+      "sha256": "4e6f4a3d0fb634d99055921fda113e7f72c67b3583fe6c4a9ac27a9042505faf"
+    }
+  ],
+  "final_result_table_hashes": {
+    "tables/AUTHORITATIVE_CONTROLLER_RESULTS_FINAL.csv": "9bd85a4592aac04269231e00f1b189c93c790a081ae3fb7fed4b19161f561207",
+    "tables/FINAL_CONTROLLER_RANKING.csv": "cb0928adfb1631c6d08e8c287ab4e7305d25db2c76d9e505d97716a560cd9ebc",
+    "tables/IT_CONTROLLER_INTERACTION_FINAL.csv": "110f2e9816c9f0ce81263028dc0af65a1d9dfb153db3b90dc045c625bcdfe577",
+    "tables/SCENARIO_CONTROLLER_RESULTS_FINAL.csv": "9fad2a804b2508d9848e3409a6f08e02c819b7392aeb237eb3ff1f207e10a03b",
+    "tables/TABLE_CONTROLLER_DEFINITIONS.csv": "bdf8d7b34d16c470488ebaad1c0e724391561b5b630b6025b9d294e2dbc7cc76",
+    "tables/TABLE_DATASET_AND_PROVENANCE.csv": "10b0e457c27d88b6aee74b00a46ca19a5c1b02fadf782df575d1899126af62ff",
+    "tables/TABLE_IT_SCENARIO_CHARACTERISTICS.csv": "27b184ea5fc5ffd6ae3f14346aec862def85c7d928f7f0cef510f7764d28aebe",
+    "tables/TABLE_IT_SCENARIO_RESULTS.csv": "9fad2a804b2508d9848e3409a6f08e02c819b7392aeb237eb3ff1f207e10a03b",
+    "tables/TABLE_MAIN_CONTROLLER_RESULTS.csv": "9bd85a4592aac04269231e00f1b189c93c790a081ae3fb7fed4b19161f561207",
+    "tables/TABLE_SAFETY_RESULTS.csv": "adadcd624f8e268daa3f99ae336d19dfa9622356d748fc76f73bc19187241dc1",
+    "tables/TABLE_SEED_RESULTS.csv": "d5e4c3a6d67c229f9c8cdefae9a3382a98a3760545d2dd81c59abd2aa27586bb",
+    "tables/TABLE_TRUE_ABLATION_RESULTS.csv": "c68444d716b532ffd3664c9daf9014083a79b6ca5099db1011787bbc4cfea600"
+  },
+  "figure_hashes": {
+    "figures/01_proposed_controller_architecture.pdf": "8c465ac3dc9e9ed3f95860edb2d313916a835ec3ac2a0b20e07f1adf23e595f1",
+    "figures/01_proposed_controller_architecture.png": "13f9d3cbf9a6d537468ff9c48b38fbc41a4f35388be610dee9c27f210ac49649",
+    "figures/02_it_workload_scenario_profiles.pdf": "235825d57e3d2bafb3a53449af89b1ea11fa34f4534c288bdfa5edf75ec4ac21",
+    "figures/02_it_workload_scenario_profiles.png": "f3680712cea4af1a60fe1b2a1c4e056e651f70303e94a07a5fb5bfa8baf1889d",
+    "figures/03_it_load_characteristics.pdf": "63a7c609ee7162482e084f52380c02c4275c2cd12e494aa533a81097b58515fb",
+    "figures/03_it_load_characteristics.png": "157e69fb147e8b525ab4a3cb91aa0d7ef7bf0edab2d073f069d9c619d86ff696",
+    "figures/04_representative_tracking_dr_day.pdf": "b555b2626a05ce66098c3d58cb298d7ea6bc64c6d059007bd1eafc3318806f3e",
+    "figures/04_representative_tracking_dr_day.png": "ad606d04649599ddc69a04aef19245d6cef62bb56dfbc4a50009e61675c2471a",
+    "figures/05_soc_and_battery_dispatch.pdf": "7968f6a9b1af2ebfff8edb27c599d7e11487cc4e5107af3e7e20d10ed88de31c",
+    "figures/05_soc_and_battery_dispatch.png": "c901c5f52daff88620c3b3f5922ad067e1b7b90e973a87c2928bf24fa7208f29",
+    "figures/06_corrected_main_controller_comparison.pdf": "b72f026af195126d19608a4ca38bfab701f3ccf0f327db31a918c9d2a729c650",
+    "figures/06_corrected_main_controller_comparison.png": "dae4b7daf5c19de525fe121603f35d4b005b49cfd1c21987421fb362bc16bff6",
+    "figures/07_multiseed_uncertainty.pdf": "c42267f4e3d35357d89b69020a6bafa35a3135f4d29fab608e282dffce5e0bae",
+    "figures/07_multiseed_uncertainty.png": "c83884792248f419b43f06179b2d00a07d083d7b0c966ae362b65856e49b6418",
+    "figures/08_it_workload_controller_robustness.pdf": "f10297152ef95d5226aeb17794531c6445c97e552cec33c4bb09776316f20f95",
+    "figures/08_it_workload_controller_robustness.png": "c7824b656097cdecd91b1c272594f3864e6b8f4bc9f1a3c732b7ba2e8213b527",
+    "figures/09_safety_projection_behavior.pdf": "89af62d65808fa57faf71f5516f7040bf9ecb1c4da214cbb9637e16d64886af3",
+    "figures/09_safety_projection_behavior.png": "5281fda113956d2240cb6de2a98fe775f2e7782eee806fc19230417235fe3fec"
+  },
+  "final_trajectory_hashes": {
+    "trajectories/baselines/carbon_aware_daily_reset_final.parquet": "fc4a383d3ef7126049cb9f82d9658c1c30517ffa20b9804aa3524a2981b7e859",
+    "trajectories/baselines/greedy_tracking_daily_reset_final.parquet": "a535162786a6b6306b09b81b652306eb0f787fe48e75ff6e95c75ebb50f3fdd0",
+    "trajectories/baselines/no_battery_daily_reset_final.parquet": "1fc3c7faaeaf24ba364a5114298eef7187cde6f32c9a7eb89dd66f44bb69e9d8",
+    "trajectories/baselines/rule_based_daily_reset_final.parquet": "3f2b5cc788a1de39c5dd4a9eb65eca157530b4f134c0a3db2e1f3a7b11712e9e",
+    "trajectories/baselines/tou_self_consumption_daily_reset_final.parquet": "06f421e5ca71d140256e39e5696c6d9d3358b463293bdb9b5997a760ab9ce50a",
+    "scenario_trajectories/baselines/ai_training_bursty_carbon_aware_final.parquet": "abe3cc9cc6a4565da4fd2dc80122ccda5fce788a7cdc3e576fad34278198ad41",
+    "scenario_trajectories/baselines/ai_training_bursty_greedy_tracking_final.parquet": "75a3d9e13c78f25a497c0363a62d89dd96bfee87564b93f0be89cfc7c2ce1baf",
+    "scenario_trajectories/baselines/ai_training_bursty_no_battery_final.parquet": "359e227d053266e74791e881773e08ed52efb9b8993a342226a8576b09d7e976",
+    "scenario_trajectories/baselines/ai_training_bursty_rule_based_final.parquet": "83208e8be57767a39e1f619b28f66c58e563f692a37acb4313d0f4157a31a4c9",
+    "scenario_trajectories/baselines/ai_training_bursty_tou_self_consumption_final.parquet": "621273d5281c5910bb4f1078aac8f4c4d5998d03f6eff9a81d348c2d205ee0cf",
+    "scenario_trajectories/baselines/baseline_real_carbon_aware_final.parquet": "3ec299d5d84df9e2cc15f5e0d67af10093d76d9ea3847d0ba6332c9febf1f99b",
+    "scenario_trajectories/baselines/baseline_real_greedy_tracking_final.parquet": "bef05b8ff44387c353b3b317be7c59e9f3998ac7ff0d9f930cd1a284741249fd",
+    "scenario_trajectories/baselines/baseline_real_no_battery_final.parquet": "cf80a9fe722cde8c37a929bc67520d1866d416ce07d6ec368ef4ee920afede80",
+    "scenario_trajectories/baselines/baseline_real_rule_based_final.parquet": "ed20828ebb5b8cfe6b2303c4ab53ba3bd7eb6e0febe0a3ebda20811e58c19f7d",
+    "scenario_trajectories/baselines/baseline_real_tou_self_consumption_final.parquet": "d0b88d53854c0ff523f0649cafe64716c275e2b8e42ff7427bc21151278705e9",
+    "scenario_trajectories/baselines/dr_coincident_high_load_carbon_aware_final.parquet": "980f8451ea7a25357a83adb339491529eed3e900c7bfa7b5c0f3c4ce2ea238b1",
+    "scenario_trajectories/baselines/dr_coincident_high_load_greedy_tracking_final.parquet": "4f9690e291787c41a49c3844b2b9d3dc0895117ea9c7af22a401a6bc40ed119e",
+    "scenario_trajectories/baselines/dr_coincident_high_load_no_battery_final.parquet": "4e69e10adea95e41730e65e79d036ed03dc20f894db6f1f74eb5aa3dce923b6b",
+    "scenario_trajectories/baselines/dr_coincident_high_load_rule_based_final.parquet": "4294e458416a8277423099a6f38f1e154328c8f9af5096a13856e84aa0b1149e",
+    "scenario_trajectories/baselines/dr_coincident_high_load_tou_self_consumption_final.parquet": "7c9e6168d6b759abc1fc726c77d51622276fcdb398762fb8bedd7205dc30a89f",
+    "scenario_trajectories/baselines/high_it_load_carbon_aware_final.parquet": "c22ffcc2bb1836fe6df529a4ada4d938658fbbf012946a8be0d73d15ba580572",
+    "scenario_trajectories/baselines/high_it_load_greedy_tracking_final.parquet": "dbe68f03381b21411c84fafe1e602450e4aae5569950a95951e7f96b21b05a8b",
+    "scenario_trajectories/baselines/high_it_load_no_battery_final.parquet": "eb93f8292d39fa3b0e1ca8c281bbc9361c337de0bf3c7d7756528769fe7466eb",
+    "scenario_trajectories/baselines/high_it_load_rule_based_final.parquet": "58d32722b59adb6410fda981538de31ee64510a90bb98f2bd8c6c5795fb7f442",
+    "scenario_trajectories/baselines/high_it_load_tou_self_consumption_final.parquet": "902d77b703354eb5fa15efd10d00cdb35883d9dffbf91f9ecdce5d8003182210",
+    "scenario_trajectories/baselines/hot_day_cooling_stress_carbon_aware_final.parquet": "2796edd99d603d2a91e1374b65b0959aaecbbe940ac76ddd65fd1401d6b5cc81",
+    "scenario_trajectories/baselines/hot_day_cooling_stress_greedy_tracking_final.parquet": "3656e6453de54aac0e41c540f50c1e4d835dca3e7384fc2804d13550f95844f7",
+    "scenario_trajectories/baselines/hot_day_cooling_stress_no_battery_final.parquet": "4348edb4962087214b9eff6696507e6e1f2733221f04ffc8533cd5c6f164eb23",
+    "scenario_trajectories/baselines/hot_day_cooling_stress_rule_based_final.parquet": "9257f22b29340c06550330e6b127c8fded7981cfb2a3b677d3e04e56f59fd023",
+    "scenario_trajectories/baselines/hot_day_cooling_stress_tou_self_consumption_final.parquet": "33064e39e2a17f35bca78673c2d2bea271c31fc69983ce5939162aba28e76434",
+    "scenario_trajectories/baselines/low_it_load_carbon_aware_final.parquet": "ac2ba343256978b66cb1e45f98519ad6250f120f664a144cf053f3b7a3e5fadf",
+    "scenario_trajectories/baselines/low_it_load_greedy_tracking_final.parquet": "e905b2261c6762b548894fed475e4b26f6f6d294b900ad73aa678c1bcbf5aacd",
+    "scenario_trajectories/baselines/low_it_load_no_battery_final.parquet": "d69ccbee4ca97a49530b874af666c082c67e158f5ab5f9eee8cc23d6b6970018",
+    "scenario_trajectories/baselines/low_it_load_rule_based_final.parquet": "324f5c6bb6d2ef819e7b81cd62da6c15d47259b6cf45aa6c3771e3cd7a16ccba",
+    "scenario_trajectories/baselines/low_it_load_tou_self_consumption_final.parquet": "d3e1aebc13ea531bd8607992712e84e8ffa6ba502e76f98dab490797e91fdaa6",
+    "scenario_trajectories/baselines/smooth_cloud_service_carbon_aware_final.parquet": "edf071dacf06ba5b5fb432202e8ef2b47da4b5d066c2d996833020825f9859ff",
+    "scenario_trajectories/baselines/smooth_cloud_service_greedy_tracking_final.parquet": "8c0ea9b6502c19dc93d21ecc51636c825d1e9ab1ee4460a0d03e7c77ce82b1ec",
+    "scenario_trajectories/baselines/smooth_cloud_service_no_battery_final.parquet": "a1e085ae8cbe7fdda3173ab3bc3ed2a6fc51c2f2d8bd45cc126d4733779dd021",
+    "scenario_trajectories/baselines/smooth_cloud_service_rule_based_final.parquet": "876c75b5fc4da917966d2f3de08fbf059fe6f45e1601f2c49f37522cd89423d0",
+    "scenario_trajectories/baselines/smooth_cloud_service_tou_self_consumption_final.parquet": "a6486e5c0b7c2289b7ddb6033ec23559e836719b063733dadf25e38979a157e1",
+    "scenario_trajectories/baselines/workload_shiftable_carbon_aware_final.parquet": "7bce7f63320d947fe8156d359036b841fdb7a7d697d022143888b3c5e4d1c16c",
+    "scenario_trajectories/baselines/workload_shiftable_greedy_tracking_final.parquet": "2dc14c6c26f6271a942b9880bd125e14733fcf0bb6c286b24394d3553842f98d",
+    "scenario_trajectories/baselines/workload_shiftable_no_battery_final.parquet": "7acc1d5d0c5936492a7da32af0b12212845899568fdb63dd58c0879858466b12",
+    "scenario_trajectories/baselines/workload_shiftable_rule_based_final.parquet": "dad92166f489b78f0b02123494ed383d4eff93c3fdffc66926d02cdb4e4d6c63",
+    "scenario_trajectories/baselines/workload_shiftable_tou_self_consumption_final.parquet": "ec48a5ab15135c35b3f8621961fc55451773789739df4bc96ac63464d4a55358",
+    "scenario_trajectories/learned_soc_repair/low_it_load_proposed_residual_safesac_seed_1_final.parquet": "25437426485f66340f962f85f536aa31b159774ccd682100f8a15c5f0ed7c8ee",
+    "scenario_trajectories/learned_soc_repair/low_it_load_proposed_residual_safesac_seed_2_final.parquet": "1b131614995c4daa87babb62d2c47d09e1d789dab7c015199f9dc7c75ea7eb2e",
+    "scenario_trajectories/learned_soc_repair/low_it_load_proposed_residual_safesac_seed_3_final.parquet": "bc05c121c3be9922837d2a4b777e0e118a13f1509041f9ec0501ee0a08755ebd",
+    "scenario_trajectories/learned_soc_repair/low_it_load_proposed_residual_safesac_seed_4_final.parquet": "35a1babf96cad9fd634cb03caeed72ab529fa4ded2416bbfee150f9e706d404b",
+    "scenario_trajectories/learned_soc_repair/low_it_load_proposed_residual_safesac_seed_5_final.parquet": "bf313330ceb2e32895e9b6d2831cae411f7665ea4aca2f574ec01321462f2d35",
+    "scenario_trajectories/learned_soc_repair/low_it_load_residual_sac_seed_1_final.parquet": "13acaee9ea3d899fece48119d27e5829ff61d9f115ff56010c32e886eb0d47ba",
+    "scenario_trajectories/learned_soc_repair/low_it_load_residual_sac_seed_3_final.parquet": "8d5449bd923ff10c06ccde428b1141301c3e3215a490cfa40462544a82db7c39",
+    "scenario_trajectories/learned_soc_repair/low_it_load_residual_sac_seed_4_final.parquet": "6e30d3bcd803dc6bde462367e44a33a7c2e6a7284c65189450d407b0f5e6c294",
+    "scenario_trajectories/learned_soc_repair/low_it_load_residual_sac_seed_5_final.parquet": "c1fde9c40e2c0198f6a440a551e341f2f93b290aa606fd5c418f0ff1a0fad695"
+  },
+  "software_versions": {
+    "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26100-SP0",
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "matplotlib": "3.10.9",
+    "scipy": "1.15.3",
+    "gymnasium": "1.3.0",
+    "stable-baselines3": "2.9.0",
+    "torch": "2.12.0+cpu",
+    "pyarrow": "24.0.0",
+    "PyYAML": "6.0.3"
+  },
+  "seed_list": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "test_results": {
+    "tests": 65,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": 65,
+    "time_seconds": 28.063,
+    "command": "python -m pytest -q tests --disable-warnings --junitxml=results/publication_final/verification/pytest_report.xml"
+  },
+  "baseline_evaluation": {
+    "controllers": [
+      "no_battery",
+      "rule_based",
+      "tou_self_consumption",
+      "carbon_aware",
+      "greedy_tracking"
+    ],
+    "test_days": 92,
+    "test_intervals": 8832,
+    "scenario_count": 8,
+    "metric_tolerance": 1e-08
+  },
+  "learned_scenario_reevaluation": {
+    "reason": "proven hard-SOC violation in old low-IT trajectories",
+    "trajectories": 9,
+    "models_retrained": 0
+  },
+  "authoritative_directory": "results/publication_final"
+}

@@ -1,0 +1,12 @@
+{
+  "dataset_validation": "PASS",
+  "model_checkpoints_loaded": 30,
+  "main_controllers": 8,
+  "learned_seed_rows": 15,
+  "scenario_controller_rows": 64,
+  "ablation_variants": 5,
+  "metric_comparisons": 1249,
+  "metric_comparisons_passed": 1249,
+  "passed": true,
+  "training_performed": false
+}

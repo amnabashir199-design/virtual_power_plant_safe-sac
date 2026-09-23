@@ -1,0 +1,22 @@
+{
+  "controller": "direct_safesac",
+  "seed": 5,
+  "training_steps": 100000,
+  "train_frequency_environment_steps": 4,
+  "gradient_steps_per_update": 1,
+  "planned_gradient_updates_after_learning_starts": 23750,
+  "selected_checkpoint_step": 20000,
+  "selection_rule": "minimum mean daily validation objective across all 92 validation days",
+  "config_path": "configs\\publication_v1\\direct_safesac.yaml",
+  "config_sha256": "40a3907b55ba9c464e1bffe1c2a489b925a45d6845109494107bdafd87798146",
+  "config_snapshot_sha256": "f283aad771b7bc67d56337910b02974137aaeecc64dfbb76817722ad94b88ecd",
+  "dataset_path": "results\\publication_v1\\dataset\\green_dc_vpp_publication_v1_2019_15min.parquet",
+  "dataset_sha256": "e8cfd0456c63797c25e9a16a43423eb783c4f7c8f6a41436748cbf9f02ddff31",
+  "model_path": "results\\publication_v1\\models\\direct_safesac\\seed_5\\selected_validation_checkpoint.zip",
+  "model_sha256": "c326d6924bb433e1f6a44e6ab40c7f72c3f084ff2ab6dc0071b6a315c7cef5fe",
+  "latest_model_path": "results\\publication_v1\\models\\direct_safesac\\seed_5\\latest_model.zip",
+  "latest_model_sha256": "6d043c42b72e550453e77025cf1ea455f39332acf602931b24f9d768d06c6b0d",
+  "observation_dimension": 24,
+  "action_dimension": 1,
+  "elapsed_seconds": 1413.4690408706665
+}

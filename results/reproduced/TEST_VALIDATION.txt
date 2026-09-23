@@ -1,0 +1,5 @@
+Isolated package regression test: PASS
+Command: python -m pytest -q -p no:cacheprovider
+Working directory: package root
+Result: 30 passed in 6.53 seconds
+Parent research project data required: no

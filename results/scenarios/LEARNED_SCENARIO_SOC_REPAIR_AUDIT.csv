@@ -1,0 +1,10 @@
+scenario,controller,seed,old_min_SOC,old_max_SOC,final_min_SOC,final_max_SOC,model_retrained,passed
+low_it_load,residual_sac,1,0.380864169808396,0.901761120093904,0.380864169808396,0.9,False,True
+low_it_load,residual_sac,3,0.417478628655371,0.901975950200221,0.417478628655371,0.9,False,True
+low_it_load,residual_sac,4,0.452784501932116,0.901780885137408,0.452784501932116,0.9,False,True
+low_it_load,residual_sac,5,0.455434231165887,0.906453433022515,0.455434231165887,0.9,False,True
+low_it_load,proposed_residual_safesac,1,0.481612733602125,0.906480356869975,0.481612733602125,0.9,False,True
+low_it_load,proposed_residual_safesac,2,0.48205370876777,0.901669592482858,0.48205370876777,0.9,False,True
+low_it_load,proposed_residual_safesac,3,0.348211443917679,0.903341259497503,0.348211443917679,0.9,False,True
+low_it_load,proposed_residual_safesac,4,0.474225125167719,0.901339661330271,0.474225125167719,0.9,False,True
+low_it_load,proposed_residual_safesac,5,0.478037243876231,0.905853861435163,0.478037243876231,0.9,False,True
